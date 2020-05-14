@@ -14,7 +14,7 @@ def load_model():
 
     global model
     # load model weight
-    model = tf.keras.models.load_model('tunemodel.h5')
+    model = tf.keras.models.load_model('cat_vs_dog.h5')
     # This is very important
     #model.keras_model._make_predict_function()
     #return model
