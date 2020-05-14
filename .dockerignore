@@ -1,0 +1,7 @@
+.git
+.cache
+.ipynb_checkpoints
+kenv
+__pycache__
+*.jpeg
+*.ipynb
