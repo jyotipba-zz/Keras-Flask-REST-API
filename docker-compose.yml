@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+  modelserver:
+    image: jyoti/modelserver
+    build: ./app_server
+    depends_on:
+    - redis
+    env_file:
+    - app.env
+  webserver:
+    image: jyoti/webserver
+    build: ./web_server
+    ports:
+    - "8000:8000"
+    depends_on:
+    - redis
+    env_file:
+    - app.env
