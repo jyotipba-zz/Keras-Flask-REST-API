@@ -1,4 +1,4 @@
 redis
-Pillow==7.1.2
+Pillow==8.1.1
 tensorflow==2.2.0
 numpy==1.18.4
